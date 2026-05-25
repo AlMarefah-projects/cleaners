@@ -21,7 +21,7 @@
     "livestream": false,
     "logging_level": "debug",
     "iou_threshold": 0.01,
-    "data_send_url": "https://backend.aihajjservices.com/camera/create-recycle-monitoring/",
+    "data_send_url": "https://backend.aihajjservices.com/camera/create-cleaners-presence/",
     "heartbeat_url": "https://backend.aihajjservices.com/camera/create-camera-heartbeat/",
     "X-Secret-Key": "e5oNH8Yhx8eJml4bSxYw",
     "local_ip": "127.0.0.2",
