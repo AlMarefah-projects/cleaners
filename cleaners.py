@@ -113,7 +113,7 @@ def send_cleaner_presence(
 
     data = {
         "sn": camera_sn,
-        "cleaner": cleaner_name,
+        "person_class": cleaner_name,
         "cleaner_count": str(cleaner_count),
         "start_time": start_time,
         "end_time": end_time
