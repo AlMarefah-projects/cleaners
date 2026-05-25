@@ -344,20 +344,34 @@ def process_camera(camera):
 
             # -------------------------------------------------
             # Send detections
-            # -------------------------------------------------
+            # ------------------------------------------------
             if SEND_DATA:
-
-                for cleaner_name, cleaner_count in detected_counts.items():
-
+            
+                # If nothing detected
+                if not detected_counts:
+            
                     send_cleaner_presence(
                         camera_sn=camera_sn,
-                        cleaner_name=cleaner_name,
-                        cleaner_count=cleaner_count,
+                        cleaner_name="cleaner-female",
+                        cleaner_count=0,
                         start_time=start_time,
                         end_time=end_time,
                         frame=frame
                     )
-
+            
+                # Send actual detections
+                else:
+            
+                    for cleaner_name, cleaner_count in detected_counts.items():
+            
+                        send_cleaner_presence(
+                            camera_sn=camera_sn,
+                            cleaner_name=cleaner_name,
+                            cleaner_count=cleaner_count,
+                            start_time=start_time,
+                            end_time=end_time,
+                            frame=frame
+                        )
             # -------------------------------------------------
             # Show frame
             # -------------------------------------------------
