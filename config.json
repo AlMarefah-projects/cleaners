@@ -1,0 +1,29 @@
+{
+    "streams": [
+
+    ],
+    "model": "models/recycle-yolo11s_rknn_model",
+    "target": "rk3588",
+    "multirun_cooldown": 10,
+    "inference_interval": 300,
+    "heartbeat_interval": 30,
+    "datasend_interval": 300,
+    "frame_width": 640,
+    "frame_height": 360,
+    "frame_send_width": 960,
+    "frame_send_height": 540,
+    "frame_jpeg_quality": 80,
+    "frame_send_jpeg_quality": 80,
+    "demo": false,
+    "draw": false,
+    "show": false,
+    "send_data": true,
+    "livestream": false,
+    "logging_level": "debug",
+    "iou_threshold": 0.01,
+    "data_send_url": "https://backend.aihajjservices.com/camera/create-recycle-monitoring/",
+    "heartbeat_url": "https://backend.aihajjservices.com/camera/create-camera-heartbeat/",
+    "X-Secret-Key": "e5oNH8Yhx8eJml4bSxYw",
+    "local_ip": "127.0.0.2",
+    "mac_address": "7e:8a:4d:ba:1f:e2"
+}
