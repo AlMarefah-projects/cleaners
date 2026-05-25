@@ -2,7 +2,7 @@
     "streams": [
 
     ],
-    "model": "models/recycle-yolo11s_rknn_model",
+    "model": "models/cleaners-yolo26s_rknn_model",
     "target": "rk3588",
     "multirun_cooldown": 10,
     "inference_interval": 300,

@@ -1,0 +1,22 @@
+description: Ultralytics YOLO26m model trained on /content/cleaners/data.yaml
+author: Ultralytics
+date: '2026-05-25T14:11:51.970788'
+version: 8.4.53
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: cleaner-female
+  1: cleaner-mail
+  2: supervisor-female
+  3: supervisor-mail
+args:
+  batch: 1
+  name: rk3588
+channels: 3
+end2end: false
